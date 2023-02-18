@@ -1,0 +1,28 @@
+body {
+  font-family: Verdana;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+h1, h2 {
+  color: #4D6263;
+  text-align: center;
+}
+
+section {
+  text-align: center;
+  color: #396466;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  color: rgb(165, 164, 164);
+  text-align: center;
+}

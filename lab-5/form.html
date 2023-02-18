@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="form-styles.css">
+
+    <script src="../scripts/load_data.js" defer></script>
+    <script src="../scripts/form.js" defer></script>
+  </head>
+  <body>
+    <h1>Получить персональные данные клиентов</h1>
+    <form id="main" target="_self">
+      <label for="count">Сколько 0-16:</label><br>
+      <input type="range" name="count" min="0" max="16" value="16"><br><br>
+      <label for="balance">Баланс от:</label><br>
+      <input type="number" id="balance" min="0" value="100"><br><br>
+
+      <label for="balance">Какие поля:</label><br>
+      <input type="checkbox" id="field1" value="0" checked>
+      <label for="field1"> ФИО </label><br>
+      <input type="checkbox" id="field2" value="1" checked>
+      <label for="field2"> Адрес </label><br>
+      <input type="checkbox" id="field3" value="2" checked>
+      <label for="field3"> Номер телефона </label><br>
+      <input type="checkbox" id="field4" value="3" checked>
+      <label for="field4"> Дата рождения </label><br>
+      <input type="checkbox" id="field5" value="4" checked>
+      <label for="field5"> Баланс </label><br>
+      <input type="checkbox" id="field6" value="5" checked>
+      <label for="field6"> Почта </label><br>
+      <input type="checkbox" id="field7" value="6" checked>
+      <label for="field7"> Модель телефона </label><br>
+      <input type="checkbox" id="field8" value="7" checked>
+      <label for="field8"> Криминал </label><br>
+
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+    <br><br>
+    <div class="result">
+      <table>
+        <thead id="thead">
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3" id="result-n">Найдено строк: 0</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>

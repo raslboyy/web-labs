@@ -1,0 +1,146 @@
+:root {
+  --main-bg-color: #FFFFFF;
+  --important-text-color: #805959;
+  --text-color: #808080;
+  --other-text-color: #CCCCCC;
+  --color: #FFB3B3;
+}
+
+body {
+  font-family: Verdana;
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+}
+
+main {
+  width: 60%;
+  margin-left: 20%;
+}
+
+footer {
+  color: var(--other-text-color);
+  text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+  footer {
+    background-color: var(--text-color);
+  }
+}
+
+
+h1,
+h2 {
+  text-decoration: underline;
+  text-align: center;
+  color: var(--important-text-color);
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: var(--other-text-color);
+}
+
+.main-name {
+  flex-grow: 2;
+}
+
+.navigation-menu {
+  flex-grow: 5;
+  color: var(--text-color);
+  margin: auto;
+}
+
+.navigation-menu nav {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--important-text-color);
+}
+
+.promo {}
+
+.about-us {
+  text-align: justify;
+}
+
+.products {
+  list-style-type: circle;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.product-card {
+  margin: 1% auto;
+  background-color: var(--color);
+  border-radius: 10px;
+  width: 40%;
+  padding: 15px;
+}
+
+.product-name {
+  text-align: center;
+}
+
+.product-description {
+  text-align: justify;
+}
+
+.product-img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 40%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.review {
+  text-align: center;
+  font-style: oblique;
+  line-height: 1.5;
+}
+
+.review-img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 40%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.review-author {
+  text-align: right;
+}
+
+.delivery {
+  text-align: justify;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3%;
+}
+
+.delivery-table {
+  margin: 0 auto;
+}
+
+.delivery-table table {
+  border: 1px solid var(--important-text-color);
+  font-size: medium;
+  border-radius: 10px;
+}
+
+.delivery-table tr:nth-child(even) {
+  background-color: var(--other-text-color);
+}

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <title>Интернет-магазин</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Мой макет интернет-магазина для закрытия
+      долга">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="loading.css">
+
+    <script src="../scripts/add_item_to_cart_button.js" defer></script>
+    <script src="../scripts/load_time.js" defer></script>
+    <script src="../scripts/hide_header.js" defer></script>
+    <script src="../scripts/load_data.js" defer></script>
+    <script src="../scripts/contact_us_button.js" defer></script>
+    <script src="../scripts/client.js" defer></script>
+  </head>
+
+  <body>
+    <div class="header" id="HEADER">
+      <div class="main-name"><h1>BigBrainBandShop</h1></div>
+      <div class="navigation-menu">
+        <nav>
+          <a href="#PROMO" id="promo-if">Акции</a>
+          <a href="#ABOUT">О нас</a>
+          <a href="#PRODUCTS">Товары</a>
+          <a href="#REVIEWES">Отзывы</a>
+          <a href="#DELIVERY">Доставка</a>
+          <button id="shopping-cart">В корзину<br>(0 товаров)</button>
+        </nav>
+      </div>
+    </div>
+    <main>
+      <section>
+        <h2 id="PROMO">Акции</h2>
+        <div class="promo">
+          <img src="../images/best.png" alt="best" usemap="#memmap">
+          <map name="memmap">
+            <area shape="rect" coords="112,11,167,62" alt="mem"
+              href="form.html">
+          </map>
+        </div>
+      </section>
+      <section>
+        <h2 id="ABOUT">О нас</h2>
+
+        <div class="about-us">
+          <p><strong>Добро пожаловать в наш интернет-магазин!</strong> Мы -
+            команда энтузиастов, убежденных в том, что
+            каждый человек
+            заслуживает оптимального функционирования своего мозга и тела. Мы
+            занимаемся производством и продажей
+            силиконовых браслетов, которые помогают достичь этой цели.</p>
+          <p>Наши браслеты были разработаны в сотрудничестве с ведущими
+            нейробиологами и специалистами в области
+            робототехники. Они содержат уникальный набор минералов и элементов,
+            которые помогают стимулировать работу
+            мозга
+            и улучшать роботоспособность. Браслеты легкие, прочные и удобные в
+            ношении, их можно носить в любых условиях.
+          </p>
+          <p>Мы стремимся к тому, чтобы наши браслеты были доступны для каждого,
+            кто хочет улучшить свою жизнь. Поэтому мы
+            предлагаем нашу продукцию по разумным ценам и гарантируем ее высокое
+            качество. Мы также готовы предоставить
+            подробную информацию о наших продуктах и ответить на любые ваши
+            вопросы.</p>
+          <p>Благодарим вас за ваш интерес к нашей продукции и надеемся, что
+            наши браслеты помогут вам достичь новых высот
+            в
+            вашей жизни!</p>
+        </div>
+
+      </section>
+      <article>
+        <h2 id="PRODUCTS">Товары</h2>
+        <div class="products">
+          <div class="product-card">
+            <table>
+              <tr><th><div class="product-name">MindBoost</div></th></tr>
+              <tr><td><div class="product-img"><img
+                      src="../images/0.jpg"
+                      alt="MindBoost"></div></td></tr>
+              <tr><td><div class="product-description">Браслет <strong>"MindBoost"</strong>
+                    - это силиконовый браслет с дополнительной вставкой из
+                    технологически продвинутого материала, который
+                    усиливает
+                    работу мозга и способствует улучшению концентрации.
+                    Браслет "MindBoost" идеально подходит для студентов,
+                    бизнесменов и всех, кто хочет максимально эффективно
+                    использовать свой ум. Подходит для ношения на
+                    протяжении
+                    всего дня.</div></td></tr>
+              <tr><td><div class="product-buy"><button id="product-buy-0">Добавить</button></div></td></tr>
+            </table>
+          </div>
+          <div class="product-card">
+            <table>
+              <tr><th><div class="product-name">RoboPower</div></th></tr>
+              <tr><td><div class="product-img"><img
+                      src="../images/1.jpg"
+                      alt="RoboPower"></div></td></tr>
+              <tr><td><div class="product-description"> Браслет <strong>"RoboPower"</strong>
+                    -
+                    это силиконовый браслет с электромагнитной вставкой,
+                    которая усиливает роботоспособность организма и
+                    повышает
+                    уровень энергии. Браслет "RoboPower" идеально подходит
+                    для
+                    людей, которые хотят улучшить свою работоспособность и
+                    энергию на протяжении всего дня. Подходит для ношения
+                    на
+                    работе, в спортзале или дома.</div></td></tr>
+              <tr><td><div class="product-buy"><button id="product-buy-1">Добавить</button></div></td></tr>
+            </table>
+          </div>
+          <div class="product-card">
+            <table>
+              <tr><th><div class="product-name">BigBrain</div></th></tr>
+              <tr><td><div class="product-img"><img
+                      src="../images/2.jpg"
+                      alt="BigBrain"></div></td></tr>
+              <tr><td><div class="product-description"> Друзья, вы
+                    когда-нибудь задумывались, как было бы здорово иметь
+                    мозг
+                    размером с голову голубя? Ну, теперь вы можете!
+                    Браслет
+                    <strong>"BigBrain"</strong> увеличивает размер вашего
+                    мозга, и все это без
+                    боли и необходимости посещать хирурга. Больше не нужно
+                    тратить деньги на умные книги, аналитические статьи и
+                    длинные лекции, "BigBrain" сделает вас гением
+                    мгновенно!
+                    Поразите всех
+                    своими новыми знаниями и умением решать самые сложные
+                    задачи - купите "BigBrain" уже сегодня!</div></td></tr>
+              <tr><td><div class="product-buy"><button id="product-buy-2">Добавить</button></div></td></tr>
+            </table>
+          </div>
+        </div>
+      </article>
+      <section>
+        <h2 id="REVIEWES">Отзывы</h2>
+        <div class="review">
+          <blockquote>Я купил этот браслет для улучшения моей концентрации и
+            я
+            был
+            приятно удивлен его эффективностью. Я
+            заметил, что моя работа стала более продуктивной, и я могу лучше
+            сосредоточиться на задачах. Браслет также очень
+            удобен для ношения в течение всего дня.</blockquote>
+          <div class="review-img"><img src="../images/jordan.jpg"
+              alt="Jordan"></div>
+          <div class="review-author"><cite>Андрей, 30 лет, программист</cite></div>
+          <hr>
+          <blockquote>Я купила этот браслет для улучшения моей
+            роботоспособности
+            и
+            я чувствую, что он действительно помогает
+            мне справляться с моими учебными заданиями. Я чувствую себя
+            более
+            энергичной и сосредоточенной на уроках.
+            Браслет также очень стильный и я получила много комплиментов от
+            своих
+            друзей.</blockquote>
+          <div class="review-img"><img src="../images/woman.jpg"
+              alt="Woman"></div>
+          <div class="review-author"><cite>Марина, 25 лет, студентка</cite></div>
+          <hr>
+          <blockquote>Я купил этот браслет для улучшения своей эффективности
+            на
+            работе, и я действительно заметил улучшение
+            моих результатов. Я чувствую себя более концентрированным и
+            способным
+            решать сложные задачи. Браслет также очень
+            стильный и профессиональный внешне.</blockquote>
+          <div class="review-img"><img src="../images/ronaldo.jpg"
+              alt="Ronaldo"></div>
+          <div class="review-author"><cite>Алексей, 45 лет, руководитель
+              компании</cite></div>
+          <hr>
+        </div>
+      </section>
+      <section id="DELIVERY">
+        <h2>Доставка</h2>
+        <div class="delivery">
+          <div class="delivery-description">
+            <p>Мы предоставляем несколько способов доставки для вашего удобства:</p>
+            <ul>
+              <li>
+                <h4>Курьерская доставка</h4>
+                <p>Мы можем доставить ваш заказ прямо к вашей двери. Этот способ
+                  доставки доступен для жителей городов, где работают наши
+                  курьеры.
+                  Стоимость и время доставки зависят от вашего местоположения.</p>
+              </li>
+              <li>
+                <h4>Почта России</h4>
+                <p>Мы также предлагаем доставку почтой России. Этот способ
+                  доставки
+                  доступен в любом городе России. Стоимость и время доставки
+                  зависят
+                  от вашего местоположения и выбранного вами варианта доставки.</p>
+              </li>
+              <li>
+                <h4>Самовывоз</h4>
+                <p>Если вы живете в близлежащем районе, вы можете самостоятельно
+                  забрать свой заказ из нашего магазина. Мы сообщим вам, когда
+                  ваш
+                  заказ будет готов к выдаче.</p>
+              </li>
+            </ul>
+            <p>Мы также предлагаем бесплатную доставку при заказе на
+              определенную
+              сумму. Подробности можно узнать у нашего менеджера по телефону или
+              по
+              электронной почте. Мы всегда стараемся сделать процесс доставки
+              нашей
+              продукции максимально простым и удобным для наших клиентов.</p>
+          </div>
+          <div class="delivery-table">
+            <table>
+              <tr>
+                <td>руб/кг</td>
+                <th>Россия</th>
+                <th>Мир</th>
+              </tr>
+              <tr>
+                <th>Курьерская доставка</th>
+                <td>2345</td>
+                <td>6324</td>
+              </tr>
+              <tr>
+                <th>Почта России</th>
+                <td>231</td>
+                <td>543</td>
+              </tr>
+              <tr>
+                <th>Самовывоз</th>
+                <td>24</td>
+                <td>71</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+      </section>
+    </main>
+    <footer>
+      <p>© copyright Khakimov Ruslan</p>
+      <p id="load-time"></p>
+    </footer>
+
+    <div class="contact-us">
+      <button id="contact-us-button"><img src="../images/mail.jpg"></button>
+      <div class="contact-us-background">
+
+        <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+        <div class="contact-us-window">
+          <span class="close" id="contact-us-close">&times;</span>
+          <span class="close" id="contact-us-reload">&#x21bb;</span>
+          <h3 style="text-align: left;">Связаться с нами</h3>
+          <form id="contact-us-form">
+            <label for="email">Email:</label><br>
+            <input type="email" id="email"><br><br>
+            <label for="title">Заголовок:</label><br>
+            <input type="text" id="title"><br><br>
+            <label for="message">Сообщение:</label><br>
+            <textarea id="message"></textarea><br><br>
+            <input type="button" id="contact-us-form-submite" value="Отправить">
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+
+
+  </body>
+
+</html>
